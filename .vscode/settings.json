@@ -1,0 +1,34 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "askForPassword": true,
+            "driver": "MySQL",
+            "connectionTimeout": 60,
+            "name": "Mysql",
+            "username": "root",
+            "database": "dhiraj_birajdar"
+        }
+    ],
+    "files.associations": {
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "dhiraj.h": "c",
+        "random": "c",
+        "streambuf": "c",
+        "time.h": "c",
+        "math.h": "c",
+        "conio.h": "c",
+        "malloc.h": "c",
+        "unordered_map": "c",
+        "ctype.h": "c",
+        "doublylist.h": "c",
+        "priorityq.h": "c",
+        "cststack.h": "c"
+    }
+}
