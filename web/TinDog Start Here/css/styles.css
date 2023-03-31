@@ -1,0 +1,160 @@
+#title {
+    background-color: #ff4c68;
+    color: white;
+    text-align: left;
+}
+
+body {
+    font-family: "Montserrat";
+    text-align: center;
+}
+h1 {
+    font-weight: bold;
+    font-size: 4.5rem;
+    line-height: 1.5;
+}
+
+.iphone-img {
+    transform: rotate(25deg);
+    width: 60%;
+    position: absolute;
+    right: 28%;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+}
+
+.container-fluid {
+    padding: 3% 15% 6%;
+}
+
+.download-btn {
+    margin: 10% 3% 10% 0;
+}
+
+/* features section */
+#features {
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+}
+.fa-solid {
+    color: #cf8172;
+    margin-bottom: 1rem;
+}
+
+.fa-solid:hover, #cta {
+    color: #ff4c88;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+.features-col {
+    padding: 6.5%;
+}
+
+/* testimonials */
+#testimonials {
+    background-color: #cf8172;
+    color: white;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press {
+    background-color: #cf8172;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* pricing */
+#pricing {
+    padding: 100px;
+}
+
+.card-col {
+    padding: 3% 2%;
+}
+
+@media (max-width:1300px) {
+    .iphone-img {
+        transform: rotate(0deg);
+        width: 70%;
+        position: static;
+        margin : 11% 22% 25%;
+    }
+}
+
+@media (max-width:991px) {
+    #title {
+        text-align: center;
+    }
+}
+
+/* cta */
+
+.cta-cnt {
+    background-color: #ff4c68;
+    padding: 8% 20%;
+
+}
+
+.cta-title {
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: white;
+    line-height: 1.5;
+}
+
+.cta-btn {
+    margin: 3% 1% 0 1%;
+}
+
+
+/* footer */
+.footer-ctn {
+    padding: 3.5%;
+}
+
+.footer-icon {
+    padding: 1%;
+}
