@@ -46,6 +46,16 @@ node *create_tree()
 //     display_tree(t);
 // }
 
+void inorder(node *tree)
+{
+    if (tree != NULL)
+    {
+        inorder(tree->left);
+        printf("%c\t", tree->data);
+        inorder(tree->right);
+    }
+}
+
 int main()
 {
     root = create_tree();
@@ -53,4 +63,5 @@ int main()
     printf("\n======= %d",root->data);
     printf("\n ====== %d  %d  %d", root->data, root->left->data, root->right->data);
     // display_tree(root);
+    inorder(root);
 }
