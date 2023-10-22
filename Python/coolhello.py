@@ -3,7 +3,7 @@ import time
 def hello():
     s = "hello dhiraj birajdar"
     for i in range(len(s)):
-        for j in range(ord('\0'), ord('z')+1):
+        for j in range(ord('a'), ord('z')+1):
             if s[i] == ' ':
                 print(' ', end='')
                 break
