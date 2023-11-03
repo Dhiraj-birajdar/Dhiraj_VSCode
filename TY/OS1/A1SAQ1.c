@@ -1,7 +1,7 @@
 // implement the c programs to create a child process using fork() display parent and child process id. child process will display message "i am Child process" and the parent process should display "i am parent process"
 #include<stdio.h>
-#include<sys/types.h>
-#include<sys/wait.h>
+// #include<sys/types.h>
+// #include<sys/wait.h>
 #include<unistd.h>
 int main()
 {

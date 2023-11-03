@@ -24,41 +24,40 @@ d. find the facrotial of second number.
             <br><br>
             <input type="submit" name="submit" value="Calculate">
         </form>
-        <h2>
-            <?php
-            if (isset($_POST['submit'])) {
-                $n1 = $_POST["n1"];
-                $n2 = $_POST["n2"];
-                echo "<br><br>$n1 % $n2 = " . mod($n1, $n2) . "<br><br>";
-                printf("%d ^ %d = %d<br><br>", $n1, $n2, power($n1, $n2));
-                printf("Sum of %d natural numbers is %d<br><br>", $n1, sumn($n1));
-                printf("factorial of %d is %d<br><br>", $n2, factorial($n2));
-            }
-            function mod($n1, $n2)
-            {
-                return $n1 % $n2;
-            }
-            function power($n1, $n2)
-            {
-                return $n1 ** $n2;
-            }
-            function sumn($n1)
-            {
-                $s = 0;
-                for ($i = 1; $i <= $n1; $i++)
-                    $s += $i;
-                return $s;
-            }
-            function factorial($n2)
-            {
-                $f = 1;
-                for ($i = 1; $i <= $n2; $i++)
-                    $f *= $i;
-                return $f;
-            }
+    <?php
+    if (isset($_POST['submit'])) {
+        $n1 = $_POST["n1"];
+        $n2 = $_POST["n2"];
+        echo "<br><br>$n1 % $n2 = " . mod($n1, $n2) . "<br><br>";
+        printf("%d ^ %d = %d<br><br>", $n1, $n2, power($n1, $n2));
+        printf("Sum of %d natural numbers is %d<br><br>", $n1, sumn($n1));
+        printf("factorial of %d is %d<br><br>", $n2, factorial($n2));
+    }
+    function mod($n1, $n2)
+    {
+        return $n1 % $n2;
+    }
+    function power($n1, $n2)
+    {
+        return $n1 ** $n2;
+    }
+    function sumn($n1)
+    {
+        $s = 0;
+        for ($i = 1; $i <= $n1; $i++)
+            $s += $i;
+        return $s;
+    }
+    function factorial($n2)
+    {
+        $f = 1;
+        for ($i = 1; $i <= $n2; $i++)
+            $f *= $i;
+        return $f;
+    }
 
-            ?>
-        </h2>
+    ?>
+    </h2>
 </body>
 
 </html>

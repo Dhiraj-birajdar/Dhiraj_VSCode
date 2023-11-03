@@ -1,4 +1,4 @@
-//write the simulation program in c to implement demand paging and show the page scheduling and total number of page faults for the following given page reference string. 
+//Q4 write the simulation program in c to implement demand paging and show the page scheduling and total number of page faults for the following given page reference string. 
 // give input n as the number of memory frames. 
 // reference string :  12,15,12,18,6,8,11,12,19,12,6,8,12,15,19,8 (implement fifo an lru)
 #include <stdio.h>
@@ -67,19 +67,18 @@ int lruPageReplacement(int pages[], int n, int num_frames) {
 }
 
 int main() {
-    // int reference_string[] = {12, 15, 12, 18, 6, 8, 11, 12, 19, 12, 6, 8, 12, 15, 19, 8};
-    int reference_string[] = {1,2,3,4,2,1,5,6,2,1,3};
-    int num_pages = sizeof(reference_string) / sizeof(reference_string[0]);
+    int refs[] = {12, 15, 12, 18, 6, 8, 11, 12, 19, 12, 6, 8, 12, 15, 19, 8};
+    int num_pages = sizeof(refs) / sizeof(refs[0]);
     int num_frames;
 
     printf("Enter the number of memory frames: ");
     scanf("%d", &num_frames);
 
-    int fifo_page_faults = fifoPageReplacement(reference_string, num_pages, num_frames);
-    int lru_page_faults = lruPageReplacement(reference_string, num_pages, num_frames);
+    int fifopf = fifoPageReplacement(refs, num_pages, num_frames);
+    int lrupf = lruPageReplacement(refs, num_pages, num_frames);
 
-    printf("FIFO Page Faults: %d\n", fifo_page_faults);
-    printf("LRU Page Faults: %d\n", lru_page_faults);
+    printf("FIFO Page Faults: %d\n", fifopf);
+    printf("LRU Page Faults: %d\n", lrupf);
 
     return 0;
 }

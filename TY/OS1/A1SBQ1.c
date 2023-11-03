@@ -1,4 +1,4 @@
-// implement the c program to accept n integers to be sorted. main function creates child process using fork system call. parent process sorts the integers using bubble sort and waits for child process using wait system call. child process sorts the integers using insertion sort.
+// Q 2 implement the c program to accept n integers to be sorted. main function creates child process using fork system call. parent process sorts the integers using bubble sort and waits for child process using wait system call. child process sorts the integers using insertion sort.
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
