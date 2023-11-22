@@ -3,11 +3,16 @@
 
 import matplotlib.pyplot as plt
 from random import choices 
-arr = choices(range(1,101),k=50)
+x = range(1,51)
+y = choices(range(1,101),k=50)
 
-plt.plot(arr[:25],arr[25:])
-# plt.plot([1,2,3],[3,2,1])
-# plt.hist(arr,edgecolor="black")
-# plt.bar(arr, height=50)
+plt.plot(x,y, marker='d',markerfacecolor='red', markersize=6, color='green', linewidth=2, label='Integer')
+
+plt.xlabel("Points")
+plt.ylabel("Random Integers")
+plt.title("Line chart")
+# plt.hist(y,edgecolor="black")
+# plt.bar(y, height=50)
+plt.legend(loc='lower right')
 plt.show()
 
