@@ -44,8 +44,8 @@ int pageFaults(int ref[], int n, int f)
 
 int main()
 {
-    int ref[] = {1,2,3,4,5};
-    int frames = 4;
-    printf("page faults = %d",pageFaults(ref, 5, frames));
+    int ref[] = {8, 5, 7, 8, 5, 7, 2, 3, 7, 3, 5, 9, 4, 6, 2};
+    int frames = 3;
+    printf("page faults = %d",pageFaults(ref, 15, frames));
     return 0;
 }

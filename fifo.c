@@ -1,10 +1,3 @@
-/*
-Q.1 Write the simulation program for demand paging and show the page 
- scheduling and total number of page faults according the FIFO page 
- replacement algorithm. Assume the memory of n frames.
-Reference String : 8, 5, 7, 8, 5, 7, 2, 3, 7, 3, 5, 9, 4, 6, 2
-*/
-
 #include <stdio.h>
 int FIFO(int ref[], int n, int f)
 {
