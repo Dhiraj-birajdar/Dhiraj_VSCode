@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>String Operations</h1>
+        </legend>
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+            <label for="inputString">Enter a string:</label>
+            <input type="text" name="inputString"><br><br>
+
+            <label for="separator">Choose a separator:</label>
+            <select name="separator">
+                <option value="#">#</option>
+                <option value="|">|</option>
+                <option value="%">%</option>
+                <option value="@">@</option>
+                <option value="!">!</option>
+                <option value=",">,</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $inputString = $_POST["inputString"];
+        $separator = $_POST["separator"];
+
+        echo "<h2>Results:</h2>";
+
+        $words = explode($separator, $inputString);
+        echo "Split words: " . implode(", ", $words) . "<br><br>";
+
+        $newSeparator = "*";
+        $newString = str_replace($separator, $newSeparator, $inputString);
+        echo "String with replaced separator: " . $newString . "<br><br>";
+
+        $lastWord = end($words);
+        echo "Last word in the string: " . $lastWord . "<br><br>";
+    }
+    ?>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+from random import choices 
+
+x = range(1,51)
+y = np.random.randint(1,100,50)
+
+plt.plot(x,y, marker='d',markerfacecolor='red', markersize=6, color='green', linewidth=2, label='Integer')
+
+plt.xlabel("Points")
+plt.ylabel("Random Integers")
+plt.title("Line chart")
+plt.legend(loc='lower right')
+plt.grid()
+plt.show()
+
+rng = np.random.RandomState(0)
+colors = rng.rand(50)
+sizes = 1000*rng.rand(50)
+
+plt.scatter(x,y, c=colors, s=sizes, alpha=0.3, marker='o')
+plt.xlabel('Points')
+plt.ylabel('Random Integers')
+plt.title("Scatter Plot")
+plt.grid()
+plt.show()
+
+
+
+
+
+
+
+
+
+
+
+import matplotlib.pyplot as plt
+
+sub = ["English", "Data Science", "C", "DBMS", "Math"]
+marks = [88, 78, 98, 95, 65]
+colors = ['red', "blue", 'pink', 'orange', 'yellow']
+explode = (0,0,0,0,0.1)
+
+plt.pie(marks, explode=explode, labels=sub, colors=colors, autopct="%1.1f%%", shadow=False)
+plt.axis('equal')
+plt.title("Pie chart")
+plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+import pandas as pd
+data = pd.read_csv("winequality-red.csv")
+
+print("a) Describing the dataset:")
+print(data.describe())
+print("\n")
+
+print(f"b) Shape of the dataset: {data.shape}")
+print("\n")
+
+print("c) Display first 3 rows from the dataset:")
+print(data.head(3))

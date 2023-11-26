@@ -7,7 +7,7 @@
 import pandas as pd
 
 # Load the dataset
-dataset = "H:\GITHUB\Dhiraj_VSCode\TY\Sem5Pr\winequality-red.csv"
+dataset = "winequality-red.csv"
 try:
     data = pd.read_csv(dataset)
 except(FileNotFoundError):
@@ -15,8 +15,8 @@ except(FileNotFoundError):
     exit(0)
 
 # a) Describing the dataset
-description = data.describe()
 print("a) Describing the dataset:")
+description = data.describe()
 print(description)
 print("\n")
 
@@ -26,6 +26,6 @@ print(f"b) Shape of the dataset: {shape}")
 print("\n")
 
 # c) Display first 3 rows from dataset
-first_three_rows = data.head(3)
 print("c) Display first 3 rows from the dataset:")
+first_three_rows = data.head(3)
 print(first_three_rows)
