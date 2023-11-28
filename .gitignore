@@ -1,4 +1,5 @@
 *.exe
 *.rar
+*.class
 .tmp.driveupload/
 desktop.ini
